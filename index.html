@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>music plAYER</title>
+    
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+<script></script>
+    </head>
+    <body>
+
+        <div class="main">
+            <div class="mainLeft" id = "mainLeftDiv" status = "off">
+
+                <div class="leftContainer">
+                    <div class="nameAndLogo">
+                        <img src="./images/songIcon.svg" alt height="30px">
+                        <span>SongCloud</span>
+                    </div>
+                    <div class="menuContainer">
+
+                        <div class="TopmMenuHeader">Menu</div>
+                        <div class="menuChild">
+                            <div class="menuChildItems">
+                                <div class="menuChildItem">
+
+                                    <div class="home menuChildren" state="none">
+                                        <img src="./images/home.svg " alt
+                                            height="25px">
+                                        <div>Home</div>
+                                    </div>
+                                    <div class="seacrh menuChildren"
+                                        state="none">
+                                        <img src="./images/blackSearch.svg" alt
+                                            height="25px">
+                                        <div>Search</div>
+                                    </div>
+                                    <div class="like menuChildren" state="none">
+                                        <img src="./images/blackLike.svg" alt
+                                            height="25px">
+                                        <div>Like</div>
+                                    </div>
+                                    <div class="playlist menuChildren"
+                                        state="none">
+                                        <img src="./images/blackPlaylist.svg"
+                                            alt height="25px">
+                                        <div>Playlist</div>
+                                    </div>
+                                    <div class="album menuChildren"
+                                        state="none">
+                                        <img src="./images/blackAlbum.svg" alt
+                                            height="25px">
+                                        <div>Album</div>
+                                    </div>
+                                    <div class="follwing menuChildren"
+                                        state="none">
+                                        <img src="./images/blackFolow.svg" alt
+                                            height="25px">
+                                        <div>Following</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="bottomMenuHeader">GENERAL</div>
+                        <div class="bottomMenuChildItems">
+                            <div class="bottomMenuChildItem">
+
+
+                                <div class="setting bottomMenuChildren"
+                                state="none">
+                                <img src="./images/blackSetting.svg" alt
+                                    height="25px">
+                                <div>settings</div>
+                            </div>
+                            <div class="Subscription bottomMenuChildren"
+                            state="none">
+                            <img src="./images/subs.svg" alt
+                                height="25px">
+                            <div>Subscription</div>
+                        </div>
+                        <!-- <div class="LogOut bottomMenuChildren"
+                        state="none">
+                        <img src="./images/blackLogin.svg" alt
+                            height="25px">
+                        <div >LogOut</div>
+                    </div> -->
+                    <a href="./newLoginPage.html" style="text-decoration: none; color: inherit;">
+  <div class="LogOut bottomMenuChildren" state="none">
+    <img src="./images/blackLogin.svg" alt height="25px">
+    <div>SignIn/SignUP</div>
+  </div>
+</a>
+
+                                                      
+                            
+                            </div>
+
+                        </div>
+
+
+                        
+
+                    </div>
+
+                </div>
+            
+                  <div class="footer">
+                    <div class="footerContainer">
+                        <div class="footerHeading">GO MOBILE</div>
+                    </div>
+                    <div class="downlodBtnContainer">
+                        <img src="./images/appleStore.svg" alt="" , width="100px" >
+                        <img src="./images/appleStore.svg"  alt="" , width="100px" >
+                    </div>
+                    <div class="footerText">
+                        <div class="footerTextChild1">Explore More:</div>
+                    <div class="footerTextChild2">  Discover the latest tracks, albums, and playlists curated just for you. Enjoy seamless streaming and high-quality sound.</div>
+                    <div class="footerTextChild3"> © 2024 Your Music Service Name. All Rights Reserved.</div>
+                        
+                       </div>
+
+                  </div>
+            
+            </div>
+            <div class="mainRight"  >
+                <div class="hamburger" id = "hamBtn"  >
+                    <div class="hamburgerImage">
+                        <img src="./images/hamburgerPnd.png" alt="" height = "30px" width = "30px">
+                    </div>
+        
+        <div class="musicTagline">"Listen Play Repeat"</div>
+
+
+                </div>
+                
+
+                 
+                <div class="mainMusicContainer">
+
+                    <div class="mainMusicContainerHeader topChart-50">
+                        <div class="Charts">Charts : Top-50</div>
+                    </div>
+                    <div class="chartBoxContainer">
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-guitar-guy-singing.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//young-caucasian-female-musician-performer-singing-dancing-neon-light-gradient.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    <div class="chartsBox">
+                        
+                        <div class="chartMusicImageContainer">
+                            <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="musicType">Ai Music Gener</div>
+                        <div class="musicTypeChart">Top 50</div>
+                    </div>
+                    
+
+                </div>
+
+                
+            
+            </div>
+            <div class="localMusicContainer">
+                
+                <div class="mainMusicContainerHeader topChart-50">
+                    <div class="Charts">Offline Musics</div>
+                </div>
+                <div class="chartBoxContainer">
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-guitar-guy-singing.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//young-caucasian-female-musician-performer-singing-dancing-neon-light-gradient.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                <div class="chartsBox">
+                    
+                    <div class="chartMusicImageContainer">
+                        <img src="./images//long-hair-artist-singing-stage.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="musicType">Ai Music Gener</div>
+                    <div class="musicTypeChart">Top 50</div>
+                </div>
+                
+
+            </div>
+
+            
+        
+        </div>
+            
+            
+        <div id="secondfooter">
+            <div id="footerText">© 2024 Your Music Service Name. All Rights Reserved.</div>
+        </div>
+        
+</div>
+
+    <div class="mainRightMusicPlayer">
+        <div class="topRight">
+            <div class="UserSection">
+                <div class="userAccount" id = "rounded-border-gradient">
+<div class="userAvatarContainer">
+<img src="./images/6sljfa7y.png" alt="" height  = "35px">
+</div>
+<div class="nameSection">
+<div class="userName">Aaqib Alam</div>
+<div class=AccountType"  id = "accountType">Premium</div>
+</div>
+                </div>
+            </div>  
+        </div> 
+        <div class="musicPlayerSystem">
+            <div class="currentMusic">
+                <div class="shareMusic">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 192 320c0 17.7 14.3 32 32 32s32-14.3 32-32l0-210.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64c0 17.7-14.3 32-32 32L96 448c-17.7 0-32-14.3-32-32l0-64z"/></svg>
+                    <div class="likeMusic" id = "likeMusic">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                    </div>
+                    <div id ="repeatShuffleMusic" status = "shuffle" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M403.8 34.4c12-5 25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6l0-32-32 0c-10.1 0-19.6 4.7-25.6 12.8L284 229.3 244 176l31.2-41.6C293.3 110.2 321.8 96 352 96l32 0 0-32c0-12.9 7.8-24.6 19.8-29.6zM164 282.7L204 336l-31.2 41.6C154.7 401.8 126.2 416 96 416l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c10.1 0 19.6-4.7 25.6-12.8L164 282.7zm274.6 188c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6l0-32-32 0c-30.2 0-58.7-14.2-76.8-38.4L121.6 172.8c-6-8.1-15.5-12.8-25.6-12.8l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c30.2 0 58.7 14.2 76.8 38.4L326.4 339.2c6 8.1 15.5 12.8 25.6 12.8l32 0 0-32c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64z"/></svg>
+                    </div>
+                </div>
+                <div class="currentMusicImageContainer">
+                    <div class ="currentMusicImage">
+                        <img src="/images/long-hair-artist-singing-stage.jpg" alt="" width ="150px">
+                    </div>
+                </div>
+                <div class="musicName">Ek Din Teri Raahon</div>
+            </div>
+            
+            <div class="musicSeekbar">
+                <audio controls id = "song" src = "" type = "audio/mpeg" >
+                    
+                </audio>
+                <div class="musicSeekbarContainer">
+                    <div class="seekbar-container">
+                        <div class="songStartEndTime" id = "songStartTime"> 0 </div>
+                        <label for="progress">Seekbar:</label>
+                        <input type="range" value="0.0" id="progress" min="0" max="100" step="0.1">
+                        <div class="songStartEndTime " id = "songEndTime"> 0 </div>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            
+            <div class="musicController">
+                <div class="backTrack" id = "backSong">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff8409" d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-320c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3l0 41.7 0 41.7L459.5 440.6zM256 352l0-96 0-128 0-32c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-64z"/></svg>
+                </div>
+                <div class="playPause" id = "playPauseSong" status = "paused">
+                    
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+
+                </div>
+
+                <div class="frontTrack" id = "frontSong">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff8c1a" d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416L0 96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3l0 41.7 0 41.7L52.5 440.6zM256 352l0-96 0-128 0-32c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29l0-64z"/></svg>
+                </div>
+                
+                 
+                
+            </div>
+             
+        </div>
+        <div id="localSongLoader">
+  <input type="file" id="localFileInput" accept="audio/*" />
+  <button id = "localPlayerBtn">Play</button>
+  <div id="songName" class="song-name-display">
+    <span class="icon">🎵</span>
+    <span id="songTitleText">No song selected</span>
+  </div>
+</div>
+
+    
+    </div>
+
+        </div>
+        
+
+
+        <script src="script.js"></script>
+     
+    </body>
+</html>
+
+

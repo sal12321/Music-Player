@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - SongCloud</title>
+  <link rel="stylesheet" href="newLoginPage.css">
+
+</head>
+<body>
+    
+
+
+  <div class="container">
+    
+    
+    <!-- Left Panel: Login Form -->
+    <div class="panel">
+      <h2>Login to SongCloud</h2>
+      <form action="index.html" method="GET" class="form-group">
+        <label for="username">Email or Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <div class="signup-link">
+        Don't have an account? <a href="signup.html">Create one</a>
+      </div>
+    </div>
+
+    <!-- Right Panel: Alternative Logins -->
+    <div class="panel">
+      <h2>Or Continue With</h2>
+      <div class="social-btns">
+        <button class="social-btn" onclick="alert('Redirecting to Google Auth')">Sign in with Gmail</button>
+        <button class="social-btn" onclick="alert('Redirecting to Phone Auth')">Sign in with Phone</button>
+      </div>
+      <div class="guest-btn-container">
+        <a href="index.html"><button class="guest-btn">Continue as Guest</button></a>
+      </div>
+      <div class="signup-link">
+        Want to go back? <a href="index.html">Return home</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
