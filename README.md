@@ -3,7 +3,7 @@
 <h5 align="center">
   <code>
     <a href="https://www.linkedin.com/in/aaqib-alam-50929a204/" title="LinkedIn">
-      <img width="22" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/linkedin.svg"> LinkedIn
+      <img title="linkedIn" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/github.svg"> LinkedIn
     </a>
   </code>
 </h5>
@@ -64,7 +64,7 @@ A modern, interactive music player web app that allows users to **select and pla
 <p align="center">A quick look at the user interface of the Music Player Web App</p>
 <h3 align="center">🎬 Main Page UI Preview</h3>
 <p align="center">
-  <img src="musicPlayerMainPage.png" width="600" alt="Music Player UI Screenshot">
+  <img src="./images/musicPlayerMainPage.png" width="600" alt="Music Player UI Screenshot">
 </p>
 
 
@@ -74,7 +74,7 @@ A modern, interactive music player web app that allows users to **select and pla
   Simple and clean login form for accessing your music player dashboard.
 </p>
 <p align="center">
-  <img src="LoginPage.png" width="600" alt="Music Player UI Screenshot">
+  <img src="./images/LoginPage.png" width="600" alt="Music Player UI Screenshot">
 </p>
 
 <h3 align="center">📝 Signup Page Preview</h3>
@@ -84,7 +84,7 @@ A modern, interactive music player web app that allows users to **select and pla
 </p>
 
 <p align="center">
-  <img src="signUpPage.png" width="600" alt="Music Player UI Screenshot">
+  <img src="./images/signUpPage.png" width="600" alt="Music Player UI Screenshot">
 </p>
 
 ---
