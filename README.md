@@ -11,7 +11,7 @@
 <p align="center">
   Hi, I'm Aaqib, a Computer Engineering student & aspiring Software Developer from India.<br>
   <br>
-  🎓 Graduating from Amity University, Computer Engineering Department<br>
+  🎓 Graduating from Amity University, Computer Engineering Department.<br>
   💻 Passionate about writing clean, maintainable code<br>
   🔬 Currently working on Java Development and Web Projects<br>
   📚 Building real-world applications to enhance my skills<br>
