@@ -1,7 +1,20 @@
 let menuChildBtn = document.querySelectorAll(".menuChildren");
 let currentSongTimeBtn = document.querySelector("#songStartTime");
 let bottomMenuChildren = document.querySelectorAll(".bottomMenuChildren");
-const fileInput = document.getElementById('localFileInput');
+let localSongContainer = document.querySelectorAll(".localSongLoader");
+let songNameDisplay = document.getElementById('musicName');
+// const video = document.getElementById("myVideo");
+// video.play();
+const video = document.getElementById("myVideo");
+
+  function playVideo() {
+    video.play();
+  }
+
+  function pauseVideo() {
+    video.pause();
+  }
+ 
 menuChildBtn.forEach((btn)=>{
     btn.addEventListener("click" , ()=>{
         unClickAll();
@@ -60,6 +73,7 @@ var repeatShuffleMusicBtn = document.getElementById("repeatShuffleMusic");
 var likeMusicBtn = document.getElementById("likeMusic");
 let songEndTimeDiv  = document.getElementById("songEndTime");
 let hamburgerBtn  = document.getElementById("hamBtn");
+
 
 console.log(hamburgerBtn) ;
 
@@ -369,53 +383,59 @@ hamburgerBtn.onclick = function() {
 }
 
 
-fileInput.onclick = () => {
-    console.log("file input clicked") ;
 
 
+
+    
+
+// JavaScript for music control
+let audioPlayer = null; 
+let isPlaying = false;
+
+function loadLocalSong() {
   const fileInput = document.getElementById('localFileInput');
   const file = fileInput.files[0];
   const songNameDisplay = document.getElementById('songName');
-  songNameDisplay.textContent = ""; // Clear previous song name
-  const songBtn = document.getElementById('localPlayerBtn');
-//   const musicNameDiv = document.getElemenstByClass('musicName');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  
+  
 
   if (file) {
-    const audioPlayer = new Audio(URL.createObjectURL(file));
-    audioPlayer.play();
-   
-    
-    // Show file name (truncate if too long)
-    let displayName = file.name.length > 30 ? file.name.slice(0, 27) + '...' : file.name;
-    songNameDisplay.textContent = "Now Playing: " + displayName;
-    songBtn.innerText = "Pause";
-   
-    
-    // musicNameDiv.textContent =  displayName ;
-  } else {
-    songNameDisplay.textContent = "";
-    alert("Please select an audio file.");
-  }
-    
-
-}
-
-///  bottom right component to load the song locally
-
-
-
-localPlayerBtn.addEventListener('click', () => {
-    const file = fileInput.files[0];
-    if (file) {55
-        const song = document.getElementById('song');
-        song.src = URL.createObjectURL(file);
-        if (!audioPlayer.paused) {
-  console.log("Audio is playing");
-} else {
-  console.log("Audio is paused");
-}
-        document.getElementById('songTitleText').textContent = file.name;
-    } else {
-        alert('Please select a file first.');
+    // Stop previous audio if any
+    if (audioPlayer) {
+      audioPlayer.pause();
+        pauseVideo();
+      audioPlayer = null;
+      isPlaying = false;
     }
-});
+
+    const fileURL = URL.createObjectURL(file);
+    audioPlayer = new Audio(fileURL);
+
+    // Display file name
+    songNameDisplay.textContent = `🎶 Now Playing: ${file.name.slice(0,-4)}`;
+    // songNameDisplay.textContent = file.name.slice(0,-4);
+    
+    // Enable play button and set to play mode
+    playPauseBtn.disabled = false;
+    playPauseBtn.textContent = '▶️ Play';
+  }
+}
+
+function togglePlayPause() {
+  const playPauseBtn = document.getElementById('playPauseBtn');
+
+  if (!audioPlayer) return;
+
+  if (isPlaying) {
+    audioPlayer.pause();
+    pauseVideo();
+    playPauseBtn.textContent = '▶️ Play';
+  } else {
+    audioPlayer.play();
+    playVideo();
+    playPauseBtn.textContent = '⏸️ Pause';
+  }
+
+  isPlaying = !isPlaying;
+}

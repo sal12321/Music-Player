@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
+     
+    
 }
 
 
@@ -21,6 +23,8 @@
 body {
     height: 100%;
     width: 100%;
+    
+   
 }
 
 .main {
@@ -37,6 +41,7 @@ body {
 .mainLeft {
     width: 20%;
     min-width: 120px;
+    max-width: 250px;
     height: 101%;
     background-color: white;
     border-right : 1px solid orange;
@@ -1230,8 +1235,17 @@ label {
     
 }
 
+
+ #localSongLoader img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+ 
+}
+
 #localSongLoader {
-  
+  position: relative;
   background-color: var(--white);
   border: 1px solid var(--orange);
   padding: 10px 15px;
@@ -1241,10 +1255,12 @@ label {
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
-  margin : 1rem auto;
+  margin: 1rem auto;
   gap: 8px;
-  width : 95%;
-  z-index: 999;
+  width: 95%;
+  height : auto;
+  z-index: 3;
+  overflow: hidden;
 }
 
 #localFileInput {
@@ -1266,15 +1282,16 @@ label {
 
 #localSongLoader button:hover {
   background-color: #e19500;
+ 
 }
 
 .song-name-display {
   display: flex;
   align-items: center;
-  gap: 6px;
+  /* gap: 6px; */
   font-size: 0.85rem;
   background-color: var(--lightGrey);
-  padding: 6px 8px;
+  /* padding: 0px 8px; */
   border-radius: 6px;
   color: var(--deepBlue);
   box-shadow: inset 0 0 2px rgba(0,0,0,0.1);
@@ -1291,4 +1308,15 @@ label {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 180px;
+}
+
+#myVideo{
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1 ;
+  opacity: 0.6;
 }

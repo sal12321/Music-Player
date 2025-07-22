@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>music plAYER</title>
     
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./CSS/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
       
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +98,9 @@
     <img src="./images/blackLogin.svg" alt height="25px">
     <div>SignIn/SignUP</div>
   </div>
+
+
+
 </a>
 
                                                       
@@ -525,7 +528,7 @@
                 </div>
                 <div class="currentMusicImageContainer">
                     <div class ="currentMusicImage">
-                        <img src="/images/long-hair-artist-singing-stage.jpg" alt="" width ="150px">
+                        <img src="./images/long-hair-artist-singing-stage.jpg" alt="" width ="150px">
                     </div>
                 </div>
                 <div class="musicName">Ek Din Teri Raahon</div>
@@ -569,13 +572,18 @@
              
         </div>
         <div id="localSongLoader">
-  <input type="file" id="localFileInput" accept="audio/*" />
-  <button id = "localPlayerBtn">Play</button>
-  <div id="songName" class="song-name-display">
-    <span class="icon">🎵</span>
-    <span id="songTitleText">No song selected</span>
-  </div>
-</div>
+    
+<video id="myVideo" >
+  <source src="./video/musicPlayingVid.mp4" type="video/mp4">
+
+</video>
+
+<input type="file" id="localFileInput" accept="audio/*" style="display: none;" onchange="loadLocalSong()"  />
+<button onclick="document.getElementById('localFileInput').click()" z-index = "1">🎵 Choose Song</button>
+<p id="songName" style="margin-top: 10px; font-weight: bold;"></p>
+<button id="playPauseBtn"  onclick="togglePlayPause()" disabled>▶️ Play</button>
+
+</div> 
 
     
     </div>
@@ -584,7 +592,7 @@
         
 
 
-        <script src="script.js"></script>
+        <script src="./Scripts/script.js"></script>
      
     </body>
 </html>
