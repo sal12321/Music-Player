@@ -3,8 +3,7 @@ let currentSongTimeBtn = document.querySelector("#songStartTime");
 let bottomMenuChildren = document.querySelectorAll(".bottomMenuChildren");
 let localSongContainer = document.querySelectorAll(".localSongLoader");
 let songNameDisplay = document.getElementById('musicName');
-// const video = document.getElementById("myVideo");
-// video.play();
+
 const video = document.getElementById("myVideo");
 
   function playVideo() {
