@@ -19,6 +19,19 @@
   📫 Reach me at: <a href="mailto:aaqibalam291@gmail.com">aaqibalam291@gmail.com</a>
 </p>
 
+<h3 align="center">🎬 Demo Video</h3>
+
+<p align="center">
+  <a href="https://github.com/sal12321/Music-Player/blob/main/video/musicPlayerSR.mp4" target="_blank">
+    <img src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/video-preview.png" width="600" alt="Watch Video Demo" />
+  </a>
+</p>
+
+<p align="center">
+  📺 Click the image above to watch a demo of the Music Player Web App in action.
+</p>
+
+
 ---
 
 <h2 align="center">🛠️ Languages & Tools</h2>
