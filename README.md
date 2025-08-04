@@ -1,4 +1,5 @@
-<h3 align="center">Hello there, I'm Aaqib 👋</h3>
+
+<h3 align="center">Hi, I'm Aaqib 👋</h3>
 
 <h5 align="center">
   <code>
@@ -9,118 +10,137 @@
 </h5>
 
 <p align="center">
-  Hi, I'm Aaqib, a Computer Engineering student & aspiring Software Developer from India.<br>
+  Welcome to the JournalApp – a Spring Boot + MongoDB application for managing personal journal entries.<br>
   <br>
-  🎓 Graduating from Amity University, Computer Engineering Department.<br>
-  💻 Passionate about writing clean, maintainable code<br>
-  🔬 Currently working on Java Development and Web Projects<br>
-  📚 Building real-world applications to enhance my skills<br>
-  💬 Ask me anything <a href="https://github.com/sal12321/musicPlayer/issues" title="Issues">here</a><br>
-  📫 Reach me at: <a href="mailto:aaqibalam291@gmail.com">aaqibalam291@gmail.com</a>
+  🎓 Computer Engineering @ Amity University<br>
+  💻 Focused on building robust, maintainable Java backend apps<br>
+  🔬 Learning by building real-world full-stack and backend projects<br>
+  📬 Contact: <a href="mailto:aaqibalam291@gmail.com">aaqibalam291@gmail.com</a>
 </p>
-
-<h3 align="center">🎬 Demo Video</h3>
-
-<p align="center">
-  <a href="https://github.com/sal12321/Music-Player/blob/main/video/musicPlayerSR.mp4" target="_blank">
-    <img src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/video-preview.png" width="600" alt="Watch Video Demo" />
-  </a>
-</p>
-
-<p align="center">
-  📺 Click the image above to watch a demo of the Music Player Web App in action.
-</p>
-
 
 ---
 
-<h2 align="center">🛠️ Languages & Tools</h2>
+<h2 align="center">🛠️ Tech Stack</h2>
 
 <p align="center">
   <img title="Java" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/java-original.svg">&nbsp;&nbsp;
-  <img title="HTML" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/html5.svg">&nbsp;&nbsp;
-  <img title="CSS" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/css.svg">&nbsp;&nbsp;
-  <img title="JavaScript" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/javascript.svg">&nbsp;&nbsp;
-  <img title="Python" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/python-original.svg">&nbsp;&nbsp;
-  <img title="JSON" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/json.svg">
+  <img title="Spring Boot" height="35" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/springboot.svg">&nbsp;&nbsp;
+  <img title="MongoDB" height="34" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/mongodb.svg">
 </p>
 
 ---
 
-# 🎵 Music Player – Web App (HTML/CSS/JS)
+# 📖 JournalApp – Spring Boot & MongoDB
 
-A modern, interactive music player web app that allows users to **select and play songs directly from their local disk** — all in the browser.
-
-### 💡 Key Features
-
-- 🔍 **Custom File Loader** — Choose any `.mp3` or `.wav` file from your local disk  
-- 🎧 **Play/Pause Audio** — Instantly control playback of your selected track  
-- 📝 **Dynamic Song Name Display** — Shows the current file name in a styled UI  
-- 🎨 **Responsive UI** — Built with modern design principles using HTML/CSS  
+A simple backend service for creating, listing, retrieving, and deleting journal entries. Built to practice Spring Data and MongoDB integration in Java!
 
 ---
 
-### 🚀 How to Use
+### 💡 Features
 
-1. **Clone** the repository or download as a ZIP  
-2. Open `index.html` in your browser  
-3. Use the **bottom-left file picker** to select a song  
-4. Click **Play** and enjoy your music!
-
----
-
-### 🖼️ Screenshot
-
-
-<h2 align="center">🖼️ Project Preview</h2>
-
-<p align="center">A quick look at the user interface of the Music Player Web App</p>
-<h3 align="center">🎬 Main Page UI Preview</h3>
-<p align="center">
-  <img src="./images/musicPlayerMainPage.png" width="600" alt="Music Player UI Screenshot">
-</p>
-
-
-<h3 align="center">🔐 Login Page Preview</h3>
-
-<p align="center">
-  Simple and clean login form for accessing your music player dashboard.
-</p>
-<p align="center">
-  <img src="./images/LoginPage.png" width="600" alt="Music Player UI Screenshot">
-</p>
-
-<h3 align="center">📝 Signup Page Preview</h3>
-
-<p align="center">
-  User-friendly registration form to create a new account in seconds.
-</p>
-
-<p align="center">
-  <img src="./images/signUpPage.png" width="600" alt="Music Player UI Screenshot">
-</p>
+- 📝 Add new journal entries to MongoDB  
+- 📑 List all journal entries  
+- 🔍 Retrieve a journal entry by ID  
+- ❌ Delete a journal entry by ID  
+- 🌱 Clean, beginner-friendly codebase  
 
 ---
 
-### 📂 Project Structure
+### 🚀 Getting Started
 
-musicPlayer/ <br>
-├── index.html<br>
-├── style.css<br>
-├── script.js<br>
-├── musics/ # Sample MP3 files<br>
-├── images/ # Icons and UI graphics<br>
+1. **Clone this repository**
 
+```bash
+git clone https://github.com/yourusername/journalApp.git
+cd journalApp
+```
 
+2. **Ensure MongoDB is running**  
+Default: `localhost:27017`, database `journaldb` (edit in `application.properties` if needed).
+
+3. **(Optional) Update `application.properties`**
+
+```properties
+spring.application.name=journalApp
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=journaldb
+#spring.data.mongodb.username=myjournaluser
+#spring.data.mongodb.password=password
+```
+
+4. **Run the app**
+
+```bash
+./mvnw spring-boot:run
+# or
+mvn spring-boot:run
+```
+
+---
+
+### 📦 Project Structure
+
+```
+journalApp/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/salAce/journalApp/
+│       │       ├── entity/ → JournalEntry.java
+│       │       ├── repo/ → JournalEntryRepo.java
+│       │       └── service/ → JournalEntryService.java
+│       └── resources/
+│           └── application.properties
+├── .gitignore
+├── README.md
+└── pom.xml
+```
+
+---
+
+### 🧪 Tests
+- Simple context-load test in `JournalAppApplicationTests.java`.
+
+---
+
+### 🚦 Conceptual Endpoints
+
+| Method | Path            | Purpose                |
+|--------|------------------|------------------------|
+| POST   | `/entries`       | Create a journal entry |
+| GET    | `/entries`       | List all entries       |
+| GET    | `/entries/{id}`  | Retrieve entry by ID   |
+| DELETE | `/entries/{id}`  | Delete entry by ID     |
+
+*(Add a controller layer to expose these routes.)*
+
+---
+
+### 🗂️ .gitignore Sample
+
+```
+/target/
+*.iml
+.idea/
+*.classpath
+*.project
+*.settings/
+.DS_Store
+Thumbs.db
+logs/
+*.log
+.env
+```
 
 ---
 
 ### 🧠 Future Improvements
 
-- 🎛️ Add audio timeline and volume controls  
-- 💾 Save last played song using localStorage  
-- 📱 Make UI fully mobile responsive  
-- 📂 Drag-and-drop file support
+- Authentication & authorization  
+- Full CRUD REST API controllers  
+- React/Vue/Angular frontend  
+- Unit & integration tests  
 
 ---
 
@@ -128,15 +148,9 @@ musicPlayer/ <br>
   Made with ❤️ by <a href="https://github.com/sal12321">Aaqib Alam</a>
 </p>
 
-
-
 ---
 
-<h2 align="center">🚀 Projects by Aaqib Alam</h2>
+<h2 align="center">🚀 More Projects by Aaqib Alam</h2>
 <p align="center">
-  💻 Passionate Developer • 🧠 Lifelong Learner • 🎯 Focused on Real-world Applications
-</p>
-
-<p align="center">
-  <a href="https://github.com/sal12321?tab=repositories">🔍 Explore More Projects</a>
-</p>
+  <a href="https://github.com/sal12321?tab=repositories">🔍 Explore My GitHub Portfolio</a>
+</p> 
