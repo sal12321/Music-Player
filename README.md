@@ -1,3 +1,4 @@
+
 <h3 align="center">Hello there, I'm Aaqib 👋</h3>
 
 <h5 align="center">
@@ -9,8 +10,7 @@
 </h5>
 
 <p align="center">
-  Hi, I'm Aaqib, a Computer Engineering student & aspiring Software Developer from India.<br>
-  <br>
+  Hi, I'm Aaqib, a Computer Engineering student & aspiring Software Developer from India.<br><br>
   🎓 Graduating from Amity University, Computer Engineering Department.<br>
   💻 Passionate about writing clean, maintainable code<br>
   🔬 Currently working on Java Development and Web Projects<br>
@@ -31,17 +31,16 @@
   📺 Click the image above to watch a demo of the Music Player Web App in action.
 </p>
 
-
 ---
 
 <h2 align="center">🛠️ Languages & Tools</h2>
 
 <p align="center">
-  <img title="Java" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/java-original.svg">&nbsp;&nbsp;
+<!--   <img title="Java" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/java-original.svg">&nbsp;&nbsp; -->
   <img title="HTML" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/html5.svg">&nbsp;&nbsp;
   <img title="CSS" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/css.svg">&nbsp;&nbsp;
   <img title="JavaScript" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/javascript.svg">&nbsp;&nbsp;
-  <img title="Python" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/python-original.svg">&nbsp;&nbsp;
+<!--   <img title="Python" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/python-original.svg">&nbsp;&nbsp; -->
   <img title="JSON" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/json.svg">
 </p>
 
@@ -71,18 +70,16 @@ A modern, interactive music player web app that allows users to **select and pla
 
 ### 🖼️ Screenshot
 
-
 <h2 align="center">🖼️ Project Preview</h2>
 
 <p align="center">A quick look at the user interface of the Music Player Web App</p>
+
 <h3 align="center">🎬 Main Page UI Preview</h3>
 <p align="center">
   <img src="./images/musicPlayerMainPage.png" width="600" alt="Music Player UI Screenshot">
 </p>
 
-
 <h3 align="center">🔐 Login Page Preview</h3>
-
 <p align="center">
   Simple and clean login form for accessing your music player dashboard.
 </p>
@@ -91,11 +88,9 @@ A modern, interactive music player web app that allows users to **select and pla
 </p>
 
 <h3 align="center">📝 Signup Page Preview</h3>
-
 <p align="center">
   User-friendly registration form to create a new account in seconds.
 </p>
-
 <p align="center">
   <img src="./images/signUpPage.png" width="600" alt="Music Player UI Screenshot">
 </p>
@@ -104,14 +99,14 @@ A modern, interactive music player web app that allows users to **select and pla
 
 ### 📂 Project Structure
 
-musicPlayer/ <br>
-├── index.html<br>
-├── style.css<br>
-├── script.js<br>
-├── musics/ # Sample MP3 files<br>
-├── images/ # Icons and UI graphics<br>
-
-
+```
+musicPlayer/
+├── index.html
+├── style.css
+├── script.js
+├── musics/      # Sample MP3 files
+├── images/      # Icons and UI graphics
+```
 
 ---
 
@@ -127,8 +122,6 @@ musicPlayer/ <br>
 <p align="center">
   Made with ❤️ by <a href="https://github.com/sal12321">Aaqib Alam</a>
 </p>
-
-
 
 ---
 
