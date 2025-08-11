@@ -4,7 +4,7 @@
 <h5 align="center">
   <code>
     <a href="https://www.linkedin.com/in/aaqib-alam-50929a204/" title="LinkedIn">
-      <img title="linkedIn" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/linkedIn.svg"> LinkedIn
+      <img title="linkedIn" height="30" src="https://raw.githubusercontent.com/sal12321/images/main/aaqibAlam/images/linkedin.svg"> LinkedIn
     </a>
   </code>
 </h5>
